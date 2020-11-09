@@ -28,13 +28,46 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.listBoxExerciseResults = new System.Windows.Forms.ListBox();
+            this.buttonExerciseResults = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // listBoxExerciseResults
+            // 
+            this.listBoxExerciseResults.FormattingEnabled = true;
+            this.listBoxExerciseResults.ItemHeight = 20;
+            this.listBoxExerciseResults.Location = new System.Drawing.Point(121, 72);
+            this.listBoxExerciseResults.Name = "listBoxExerciseResults";
+            this.listBoxExerciseResults.Size = new System.Drawing.Size(571, 344);
+            this.listBoxExerciseResults.TabIndex = 0;
+            // 
+            // buttonExerciseResults
+            // 
+            this.buttonExerciseResults.Location = new System.Drawing.Point(301, 452);
+            this.buttonExerciseResults.Name = "buttonExerciseResults";
+            this.buttonExerciseResults.Size = new System.Drawing.Size(116, 33);
+            this.buttonExerciseResults.TabIndex = 1;
+            this.buttonExerciseResults.Text = "ExerciseResults";
+            this.buttonExerciseResults.UseVisualStyleBackColor = true;
+            this.buttonExerciseResults.Click += new System.EventHandler(this.buttonExerciseResults_Click);
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(796, 525);
+            this.Controls.Add(this.buttonExerciseResults);
+            this.Controls.Add(this.listBoxExerciseResults);
+            this.Name = "Form1";
             this.Text = "Form1";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.ListBox listBoxExerciseResults;
+        private System.Windows.Forms.Button buttonExerciseResults;
     }
 }
 
